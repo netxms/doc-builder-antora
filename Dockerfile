@@ -1,7 +1,7 @@
 FROM node:24-alpine
 
 RUN \
-  apk --no-cache add ruby ruby-bundler make && \
+  apk --no-cache add ruby ruby-bundler make git && \
   gem update --system && \
   gem install asciidoctor asciidoctor-pdf
 
